@@ -28,9 +28,9 @@ export const Projects = () => {
           </h1>
           <div className="p-1 text-center">
             <p className={state.isDark ? "text-[#a5b3ce]" : "text-black"}>
-              Brief intro goes here. My main experience lies in building lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. I'm currently
-              working on lacinia tristique.
+              Projelerin tamamı başarıyla tamamlanmış ve benzersiz değerler
+              sunan projelerdir, müşteri gereksinimlerini karşılamak için
+              yaratıcı çözümler sunarak olumlu etkiler yaratırlar
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-4">
@@ -60,8 +60,8 @@ export const Projects = () => {
                 bir şekilde yönetilmesini, iş süreçlerinin izlenmesini ve
                 koordinasyonun sağlanmasını amaçlayan bir yazılım platformudur.
               </p>
-              <a href="" className="font-bold flex text-[#4b91e8]">
-                Daha Fazla{" "}
+              <a href="/contact" className="font-bold flex text-[#4b91e8]">
+                Daha Fazla
                 <AiOutlineArrowRight className="w-4 h-4 m-1 text-[#4b91e8]" />
               </a>
             </div>
@@ -91,7 +91,7 @@ export const Projects = () => {
                 planlamasına, takip etmesine ve optimize etmesine yardımcı olan
                 bir yazılım platformudur.
               </p>
-              <a href="" className="font-bold flex text-[#4b91e8]">
+              <a href="/contact" className="font-bold flex text-[#4b91e8]">
                 Daha Fazla{" "}
                 <AiOutlineArrowRight className="w-4 h-4 m-1 text-[#4b91e8]" />
               </a>
@@ -123,19 +123,14 @@ export const Projects = () => {
                 perspiciatis nam id facere eaque. Fugiat, placeat sunt quos qui
                 delectus sequi atque.
               </p>
-              <a href="" className="font-bold flex text-[#4b91e8]">
+              <a href="/contact" className="font-bold flex text-[#4b91e8]">
                 Daha Fazla{" "}
                 <AiOutlineArrowRight className="w-4 h-4 m-1 text-[#4b91e8]" />
               </a>
             </div>
           </div>
         </div>
-        <div className="pb-7">
-          <button className="flex rounded-full font-bold text-white w-400 mx-auto px-6 py-3 bg-[#465981] hover:bg-[#3f5174]">
-            Daha Fazla
-            <AiOutlineArrowRight className="text-white w-4 h-4 m-1 " />
-          </button>
-        </div>
+        <div className="pb-7"></div>
       </div>
     </div>
   );

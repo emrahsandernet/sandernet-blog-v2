@@ -21,7 +21,9 @@ export const Resume = (props) => {
   return (
     <div className="flex flex-col pt-11 p-2">
       <img
-        className="absolute top-1/5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full w-40 h-40  p-2 bg-[#1e2738] my-6"
+        className={`absolute top-1/5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full w-40 h-40  p-2  my-6 ${
+          isDarkMode ? "bg-[#1e2738]" : " border-white"
+        }`}
         src={profile}
         alt="profile"
       />
@@ -363,7 +365,7 @@ export const Resume = (props) => {
                     Şantiye Yönetim Sistemi
                   </div>
                   <div
-                    className={`text-xs ${
+                    className={`text-sm ${
                       isDarkMode ? "text-white" : "text-black "
                     }`}
                   >

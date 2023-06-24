@@ -97,12 +97,7 @@ export const Skill = () => {
               />
             </div>
           </div>
-          <div className="pb-7 mt-9">
-            <button className="flex rounded-full font-bold text-white w-400 mx-auto  px-6 py-3 bg-[#465981] hover:bg-[#3f5174]">
-              Daha Fazla
-              <AiOutlineArrowRight className="text-white w-4 h-4 m-1 " />
-            </button>
-          </div>
+          <div className="pb-7 mt-9"></div>
           <div className="flex md:flex-row flex-col  gap-8 mt-3">
             <div className="flex flex-col justify-center items-center">
               <div
@@ -213,12 +208,7 @@ export const Skill = () => {
             </div>
           </div>
         </div>
-        <div className="pb-7">
-          <button className="flex rounded-full font-bold text-white w-400 mx-auto  px-6 py-3 bg-[#465981] hover:bg-[#3f5174]">
-            Daha Fazla
-            <AiOutlineArrowRight className="text-white w-4 h-4 m-1 " />
-          </button>
-        </div>
+        <div className="pb-7"></div>
       </div>
     </div>
   );

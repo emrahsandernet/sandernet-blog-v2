@@ -11,7 +11,9 @@ export const Contacts = () => {
   return (
     <div className="flex flex-col pt-11 p-2">
       <img
-        className="absolute top-1/5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full w-40 h-40  p-2 bg-[#1e2738] my-6"
+        className={`absolute top-1/5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full w-40 h-40  p-2  my-6 ${
+          isDarkMode ? "bg-[#1e2738]" : " border-white"
+        }`}
         src={profile}
         alt="profile"
       />
@@ -22,9 +24,16 @@ export const Contacts = () => {
         } `}
       >
         <div className="flex flex-col mx-auto p-10">
-          <div className="p-1 text-center mt-9">
+          <div className="p-1  mt-9">
             <p className={isDarkMode ? "text-[#a5b3ce]" : "text-black"}>
-              Projelerinizde yardıma mı ihtiyacınız var? Bana ulaşın.
+              Projelerinizde yardıma ihtiyacınız varsa, benimle iletişime
+              geçmekten çekinmeyin. Deneyimli bir backend web geliştirici
+              olarak, sizin işinizi daha da ileri taşımak için gereken uzmanlık
+              ve becerilere sahibim. Projenizin gereksinimlerini anlamak, etkili
+              bir şekilde çözümler sunmak ve başarıyla tamamlamak için
+              buradayım. İşbirliği yapmak ve projenizin başarısı için birlikte
+              çalışmak için sabırsızlanıyorum. Lütfen bana ulaşın, size yardımcı
+              olmaktan mutluluk duyarım.
             </p>
           </div>
         </div>
