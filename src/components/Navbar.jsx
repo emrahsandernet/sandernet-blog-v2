@@ -1,17 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 import { BsFillMoonFill, BsFillSunFill, BsStackOverflow } from "react-icons/bs";
 import {
   AiOutlineMenu,
   AiFillTwitterCircle,
   AiFillGithub,
 } from "react-icons/ai";
-import { useThemeContext } from '../hooks/useThemeContext';
+import { useThemeContext } from "../hooks/useThemeContext";
 import { RiLinkedinFill } from "react-icons/ri";
 
-const  Navbar = (props) => {
-  const { dispatch ,state} = useThemeContext();
-  
+const Navbar = (props) => {
+  const { dispatch, state } = useThemeContext();
 
   return (
     // navbar with tailwindcss
@@ -36,7 +35,7 @@ const  Navbar = (props) => {
             <input
               type="checkbox"
               className="sr-only peer"
-              checked = {state.isDark ? "checked" : ""}
+              checked={state.isDark ? "checked" : ""}
               onClick={() => {
                 state.isDark
                   ? dispatch({ type: "LIGHT" })
@@ -69,34 +68,42 @@ const  Navbar = (props) => {
         </div>
       </div>
       <div className=" justif-between gap-6 hidden sm:flex ">
-        <AiFillTwitterCircle
-          className={
-            state.isDark
-              ? "text-white w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
-              : "text-[#354765] w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
-          }
-        />
-        <AiFillGithub
-          className={
-            state.isDark
-              ? "text-white w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
-              : "text-[#354765] w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
-          }
-        />
-        <RiLinkedinFill
-          className={
-            state.isDark
-              ? "text-white w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
-              : "text-[#354765] w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
-          }
-        />
-        <BsStackOverflow
-          className={
-            state.isDark
-              ? "text-white w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
-              : "text-[#354765] w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
-          }
-        />
+        <a href="https://twitter.com/emrahsander">
+          <AiFillTwitterCircle
+            className={
+              state.isDark
+                ? "text-white w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
+                : "text-[#354765] w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
+            }
+          />
+        </a>
+        <a href="https://github.com/emrahsandernet">
+          <AiFillGithub
+            className={
+              state.isDark
+                ? "text-white w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
+                : "text-[#354765] w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
+            }
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/emrah-%C5%9Fander-984274105/">
+          <RiLinkedinFill
+            className={
+              state.isDark
+                ? "text-white w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
+                : "text-[#354765] w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
+            }
+          />
+        </a>
+        <a href="https://stackoverflow.com/users/18009995/emrah-%c5%9eander">
+          <BsStackOverflow
+            className={
+              state.isDark
+                ? "text-white w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
+                : "text-[#354765] w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
+            }
+          />
+        </a>
       </div>
       <div>
         <Link
@@ -108,5 +115,5 @@ const  Navbar = (props) => {
       </div>
     </nav>
   );
-}
-export default  Navbar;
+};
+export default Navbar;

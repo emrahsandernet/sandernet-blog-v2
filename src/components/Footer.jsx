@@ -7,11 +7,11 @@ export const Footer = () => {
     <footer
       className={
         state.isDark
-          ? " container lg:max-w-screen-lg mx-auto  rounded-lg  bg-[#1e2738]"
-          : "container lg:max-w-screen-lg mx-auto  rounded-lg  bg-white  "
+          ? "container lg:max-w-screen-lg mx-auto rounded-lg bg-[#1e2738]"
+          : "container lg:max-w-screen-lg mx-auto rounded-lg bg-white"
       }
     >
-      <div className="w-full mx-auto container md:p-6 p-4 md:flex md:items-center md:justify-between ">
+      <div className="w-full mx-auto container md:p-6 p-4 md:flex md:items-center md:justify-center">
         <span
           className={
             state.isDark
@@ -20,7 +20,7 @@ export const Footer = () => {
           }
         >
           © 2023{" "}
-          <a href="https://flowbite.com/" className="hover:underline">
+          <a href="https://emrahsander.com" className="hover:underline">
             Sandernet™
           </a>
           . Tüm hakları saklıdır.
