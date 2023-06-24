@@ -83,10 +83,19 @@ export const Resume = (props) => {
                     isDarkMode ? "text-[#a5b3ce]" : "text-black"
                   } my-2`}
                 >
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Neque harum repellat dolores aliquam perferendis possimus
-                  quidem error praesentium non pariatur eaque qui, nesciunt sed
-                  officiis similique molestiae mollitia doloribus quo!
+                  Ekip çalışmasına büyük önem veren biriyim ve proje sürecinde
+                  diğer ekip üyeleriyle sıkı bir iletişim kurmayı hedeflerim.
+                  Bir problemi çözmek için farklı bakış açılarından yararlanır
+                  ve takımın ortak hedeflerine odaklanırım. Aynı zamanda yeni
+                  teknolojileri ve gelişmeleri takip etmeyi severim, çünkü web
+                  geliştirme alanında her zaman güncel kalmak önemlidir. Backend
+                  web geliştiricisi olarak, kullanıcı deneyimini geliştirmek ve
+                  işlevselliği artırmak için teknik becerilerimi sürekli olarak
+                  geliştirmek için çaba gösteririm. Kendimi sürekli olarak yeni
+                  projelere meydan okumaya ve daha da büyümeye motive ederim.
+                  Umarım bu yazı, benim hakkımda daha fazla bilgi edinmenize
+                  yardımcı olur. Sizinle çalışma fırsatını dört gözle
+                  bekliyorum!
                 </div>
               </div>
             </div>
@@ -110,7 +119,7 @@ export const Resume = (props) => {
                           isDarkMode ? "text-[#a5b3ce]" : "text-black"
                         }`}
                       >
-                        <div className="m-1">2021 - Devam Ediyor</div>
+                        <div className="m-1">2022 - Devam Ediyor</div>
                         <div className=" rounded p-2 font-semibold bg-[rgba(0,0,0,.1)]">
                           UI Soft
                         </div>
@@ -128,12 +137,16 @@ export const Resume = (props) => {
                         } `}
                       >
                         <li>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Quisquam, quod.
+                          Dinamik içerik yönetim sistemlerinin geliştirmesi ve
+                          bakımı.
                         </li>
                         <li>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Quisquam, quod.
+                          Web siteleri ve web uygulamaları için RESTful API
+                          geliştirilmesi.
+                        </li>
+                        <li>
+                          Süreç yönetimi yazılımlarının geliştirilmesi ve
+                          bakımı.
                         </li>
                       </ul>
                     </li>
@@ -162,12 +175,11 @@ export const Resume = (props) => {
                         } `}
                       >
                         <li>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Quisquam, quod.
+                          Personel ve iş takip sistemi geliştirilmesi ve bakımı.
                         </li>
                         <li>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Quisquam, quod.
+                          İnşaat sektörüne yönelik web tabanlı yazılım
+                          geliştirilmesi.
                         </li>
                       </ul>
                     </li>
@@ -196,12 +208,12 @@ export const Resume = (props) => {
                         } `}
                       >
                         <li>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Quisquam, quod.
+                          Hatalı entegrelerin yapay zeka ile tespit edilmesi ve
+                          bu hataların giderilmesi.
                         </li>
                         <li>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Quisquam, quod.
+                          Ölçüm yapılan verilerin analiz edilmesi ve
+                          raporlanması.
                         </li>
                       </ul>
                     </li>
@@ -326,7 +338,7 @@ export const Resume = (props) => {
                 </li>
                 <li className="m-2">
                   <div className=" rounded p-2 font-semibold bg-[rgba(0,0,0,.1)]">
-                    Sunucu Yönetimi1
+                    Sunucu Yönetimi
                   </div>
                 </li>
               </ul>
@@ -355,25 +367,28 @@ export const Resume = (props) => {
                       isDarkMode ? "text-white" : "text-black "
                     }`}
                   >
-                    Şantiye Yönetim Yazılımı Şantiye Yönetim Yazılımı Şantiye
-                    Şantiye Yönetim Yazılımı Şantiye Yönetim Yazılımı Yönetim
-                    Yazılımı
+                    Şantiye Yönetim Sistemi, inşaat projelerinde kaynakların
+                    etkin bir şekilde yönetilmesini, iş süreçlerinin izlenmesini
+                    ve koordinasyonun sağlanmasını amaçlayan bir yazılım
+                    platformudur.
                   </div>
                 </li>
                 <li
                   className={`${isDarkMode ? "text-white" : "text-black "} m-2`}
                 >
                   <div className="font-bold text-sm mb-1">
-                    Şantiye Yönetim Sistemi
+                    Personel Yönetim Sistemi
                   </div>
                   <div
-                    className={`text-xs ${
+                    className={`text-sm ${
                       isDarkMode ? "text-white" : "text-black "
                     }`}
                   >
-                    Şantiye Yönetim Yazılımı Şantiye Yönetim Yazılımı Şantiye
-                    Şantiye Yönetim Yazılımı Şantiye Yönetim Yazılımı Yönetim
-                    Yazılımı
+                    Personel Yönetim Sistemi, bir organizasyonun çalışanlarıyla
+                    ilgili verileri yöneterek, personel bilgilerini izlemeyi,
+                    performans değerlendirmesini yapmayı ve çalışanların
+                    katılımını kolaylaştırmayı sağlayan bir yazılım
+                    platformudur.
                   </div>
                 </li>
               </ul>
@@ -444,7 +459,7 @@ export const Resume = (props) => {
                   >
                     İngilizce
                   </div>
-                  <div class="text-[#a5b3ce] text-sm">
+                  <div className="text-[#a5b3ce] text-sm">
                     <div className="flex flex-row gap-1">
                       <div className="text-xs py-1 px-3 rounded-sm bg-[#a5b3ce]"></div>
                       <div className="text-xs py-1 px-3 rounded-sm bg-[#a5b3ce]"></div>

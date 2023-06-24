@@ -33,15 +33,25 @@ export const Name = () => {
           >
             Emrah Şander
           </h1>
-          <div className="p-1 text-center">
+          <div className="p-1 ">
             <p className={state.isDark ? " text-[#a5b3ce]" : "text-black"}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium, harum. Sunt eum consectetur beatae ex officia neque
-              iure odit deserunt tempora recusandae. Officia, atque. Vel
-              molestias qui nostrum labore voluptatem. Laudantium, harum. Sunt
-              eum consectetur beatae ex officia neque iure odit deserunt tempora
-              recusandae. Officia, atque. Vel molestias qui nostrum labore
-              voluptatem.
+              Merhaba! Ben bir backend web geliştiricisiyim. Uzun yıllardır bu
+              alanda çalışıyorum ve geniş bir tecrübe birikimine sahibim.
+              Yazılım dünyasına olan ilgim çocukluğumdan beri vardı ve bu
+              merakımı bir kariyere dönüştürmek benim için büyük bir mutluluk
+              oldu. Backend geliştirme alanında uzmanlaşmış olmam,
+              kullanıcıların görmese de bir web uygulamasının temelini oluşturan
+              iş mantığını ve veritabanı yönetimini ele almayı içerir.
+              Çalışmalarım genellikle sunucu tarafında gerçekleşir ve verileri
+              işlerken, güvenlik, performans ve ölçeklenebilirlik gibi önemli
+              konulara odaklanırım. Bir proje üzerinde çalışırken, öncelikle
+              ihtiyaçları anlamak ve ardından kullanıcıların beklentilerini
+              karşılayacak etkili bir çözüm tasarlamak için analitik düşünme
+              becerilerimi kullanırım. Veritabanı tasarımı, API entegrasyonu,
+              veri işleme ve sunucu yönetimi gibi konulara hakimim. Programlama
+              dilleri olarak Python, JavaScript, gibi dilleri kullanırken, aynı
+              zamanda popüler backend ve frontend frameworkleri ve
+              teknolojilerini de kullanmayı tercih ederim.
             </p>
           </div>
         </div>

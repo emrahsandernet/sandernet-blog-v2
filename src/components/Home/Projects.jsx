@@ -1,6 +1,10 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { useThemeContext } from "../../hooks/useThemeContext";
+import sysimage from "../../assets/33910.jpg";
+import surecimage from "../../assets/4786.jpg";
+import aiimage from "../../assets/ai.jpg";
+
 export const Projects = () => {
   const { state } = useThemeContext();
   return (
@@ -8,8 +12,8 @@ export const Projects = () => {
       <div
         className={
           state.isDark
-            ? "container lg:max-w-screen-lg mx-auto  rounded-lg  bg-[#1e2738] -my-7"
-            : "container lg:max-w-screen-lg mx-auto  rounded-lg  bg-white -my-7"
+            ? "container lg:max-w-screen-lg mx-auto rounded-lg bg-[#1e2738] -my-7"
+            : "container lg:max-w-screen-lg mx-auto rounded-lg bg-white -my-7"
         }
       >
         <div className="flex flex-col mx-auto p-10">
@@ -23,18 +27,18 @@ export const Projects = () => {
             Öne Çıkan Projeler
           </h1>
           <div className="p-1 text-center">
-            <p className={state.isDark ? " text-[#a5b3ce]" : "text-black"}>
+            <p className={state.isDark ? "text-[#a5b3ce]" : "text-black"}>
               Brief intro goes here. My main experience lies in building lorem
               ipsum dolor sit amet, consectetur adipiscing elit. I'm currently
               working on lacinia tristique.
             </p>
           </div>
-          <div className="flex md:flex-row flex-col justify-between gap-6 my-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-4">
             <div className="flex flex-col">
               <img
-                src="https://themes.3rdwavemedia.com/profolio/bs5/assets/images/projects/project-thumb-1.png"
+                src={sysimage}
                 alt="project"
-                className="rounded-lg"
+                className="rounded-lg h-64 object-cover"
               />
               <h1
                 className={
@@ -43,7 +47,7 @@ export const Projects = () => {
                     : "font-bold text-black mt-3"
                 }
               >
-                Trade App
+                Şantiye Yönetim Sistemi
               </h1>
               <p
                 className={
@@ -52,21 +56,20 @@ export const Projects = () => {
                     : "text-gray-600 text-sm"
                 }
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-                ipsum, quasi sunt deserunt debitis labore, delectus assumenda
-                perspiciatis nam id facere eaque. Fugiat, placeat sunt quos qui
-                delectus sequi atque.
+                Şantiye Yönetim Sistemi, inşaat projelerinde kaynakların etkin
+                bir şekilde yönetilmesini, iş süreçlerinin izlenmesini ve
+                koordinasyonun sağlanmasını amaçlayan bir yazılım platformudur.
               </p>
               <a href="" className="font-bold flex text-[#4b91e8]">
                 Daha Fazla{" "}
                 <AiOutlineArrowRight className="w-4 h-4 m-1 text-[#4b91e8]" />
               </a>
             </div>
-            <div>
+            <div className="flex flex-col">
               <img
-                src="https://themes.3rdwavemedia.com/profolio/bs5/assets/images/projects/project-thumb-6.png"
+                src={surecimage}
                 alt="project"
-                className="rounded-lg"
+                className="rounded-lg h-64 object-cover"
               />
               <h1
                 className={
@@ -75,7 +78,7 @@ export const Projects = () => {
                     : "font-bold text-black mt-3"
                 }
               >
-                Trade App
+                Süreç Yönetim Sistemi
               </h1>
               <p
                 className={
@@ -84,21 +87,20 @@ export const Projects = () => {
                     : "text-gray-600 text-sm"
                 }
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-                ipsum, quasi sunt deserunt debitis labore, delectus assumenda
-                perspiciatis nam id facere eaque. Fugiat, placeat sunt quos qui
-                delectus sequi atque.
+                Süreç Yönetim Sistemi, bir kuruluşun iş süreçlerini
+                planlamasına, takip etmesine ve optimize etmesine yardımcı olan
+                bir yazılım platformudur.
               </p>
               <a href="" className="font-bold flex text-[#4b91e8]">
                 Daha Fazla{" "}
                 <AiOutlineArrowRight className="w-4 h-4 m-1 text-[#4b91e8]" />
               </a>
             </div>
-            <div>
+            <div className="flex flex-col">
               <img
-                src="https://themes.3rdwavemedia.com/profolio/bs5/assets/images/projects/project-thumb-4.png"
+                src={aiimage}
                 alt="project"
-                className="rounded-lg"
+                className="rounded-lg h-64 object-cover"
               />
               <h1
                 className={
@@ -129,7 +131,7 @@ export const Projects = () => {
           </div>
         </div>
         <div className="pb-7">
-          <button className="flex rounded-full font-bold text-white w-400 mx-auto  px-6 py-3 bg-[#465981] hover:bg-[#3f5174]">
+          <button className="flex rounded-full font-bold text-white w-400 mx-auto px-6 py-3 bg-[#465981] hover:bg-[#3f5174]">
             Daha Fazla
             <AiOutlineArrowRight className="text-white w-4 h-4 m-1 " />
           </button>

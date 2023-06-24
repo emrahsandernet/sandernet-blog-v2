@@ -3,7 +3,8 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import postgresql from "../../assets/postgresql.svg";
 import django from "../../assets/django-alt.svg";
 import react from "../../assets/react.svg";
-
+import sysimage from "../../assets/construction-workers-sunset.jpg";
+import surecimage from "../../assets/4786.jpg";
 import { useThemeContext } from "../../hooks/useThemeContext";
 
 export const Project = () => {
@@ -19,11 +20,7 @@ export const Project = () => {
       >
         <div className="flex flex-col md:flex-row mx-auto p-7">
           <div>
-            <img
-              className="rounded-lg max-w-xs"
-              src="https://themes.3rdwavemedia.com/profolio/bs5/assets/images/projects/project-thumb-1.png"
-              alt=""
-            />
+            <img className="rounded-lg max-w-xs " src={sysimage} alt="" />
           </div>
           <div className="md:mt-0 mt-2">
             <div className="md:pl-4 pl-0">
@@ -32,17 +29,16 @@ export const Project = () => {
                   isDarkMode ? "text-white" : "text-black"
                 } mb-2`}
               >
-                Trading App Lorem
+                Şantiye Yönetim Yazılımı
               </h1>
               <div
                 className={`text-[#a5b3ce] ${
                   isDarkMode ? "text-gray-400" : "text-gray-700"
                 }`}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                libero atque facilis ab soluta eos quaerat, itaque expedita
-                beatae! Modi sunt quis nihil beatae repellat deserunt inventore
-                enim delectus id.
+                Şantiye Yönetim Sistemi, inşaat projelerinde kaynakların etkin
+                bir şekilde yönetilmesini, iş süreçlerinin izlenmesini ve
+                koordinasyonun sağlanmasını amaçlayan bir yazılım platformudur.
               </div>
               <h4
                 className={`font-bold ${
@@ -80,11 +76,7 @@ export const Project = () => {
         </div>
         <div className="flex flex-col md:flex-row mx-auto p-7">
           <div>
-            <img
-              className="rounded-lg max-w-xs"
-              src="https://themes.3rdwavemedia.com/profolio/bs5/assets/images/projects/project-thumb-11.png"
-              alt=""
-            />
+            <img className="rounded-lg max-w-xs" src={surecimage} alt="" />
           </div>
           <div className="md:mt-0 mt-2">
             <div className="md:pl-4 pl-0">
@@ -93,17 +85,16 @@ export const Project = () => {
                   isDarkMode ? "text-white" : "text-black"
                 } mb-2`}
               >
-                Trading App Lorem
+                Süreç Yönetim Yazılımı
               </h1>
               <div
                 className={`text-[#a5b3ce] ${
                   isDarkMode ? "text-gray-400" : "text-gray-700"
                 }`}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                libero atque facilis ab soluta eos quaerat, itaque expedita
-                beatae! Modi sunt quis nihil beatae repellat deserunt inventore
-                enim delectus id.
+                Süreç Yönetim Sistemi, bir kuruluşun iş süreçlerini
+                planlamasına, takip etmesine ve optimize etmesine yardımcı olan
+                bir yazılım platformudur.
               </div>
               <h4
                 className={`font-bold ${
