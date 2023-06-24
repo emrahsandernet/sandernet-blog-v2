@@ -34,7 +34,7 @@ export const Contacts = () => {
     }
 
     setLoading(true);
-    fetch("http://188.119.41.56:3005/api/contact", {
+    fetch("https://188.119.41.56:3005/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
