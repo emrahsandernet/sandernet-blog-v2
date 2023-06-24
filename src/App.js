@@ -2,25 +2,18 @@ import React from "react";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Navbar from "./components/Navbar";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-
-} from "react-router-dom";
-import {Menu} from "./components/Menu";
-import {Footer} from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Menu } from "./components/Menu";
+import { Footer } from "./components/Footer";
 import { Loader } from "./components/Loader";
 import { ResumePage } from "./pages/ResumePage";
 import { ContactPage } from "./pages/ContactPage";
 import { useThemeContext } from "./hooks/useThemeContext";
 
-
 function App() {
-
   const [loading, setLoading] = React.useState(true);
-  const [route,setRoute ] = React.useState("");
-  const [isOpen , setIsOpen] = React.useState(true);
+  const [route, setRoute] = React.useState("");
+  const [isOpen, setIsOpen] = React.useState(true);
   const { state } = useThemeContext();
 
   React.useEffect(() => {
@@ -30,7 +23,7 @@ function App() {
   }, []);
 
   return (
-    <div className={state.isDark ? "bg-[#19202e]" : "bg-[#f5f7fa]"}>
+    <div className={state.isDark ? "bg-[#19202e]" : "bg-[#f5f7fa] w-full"}>
       {loading ? (
         <Loader />
       ) : (
