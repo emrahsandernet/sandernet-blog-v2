@@ -245,11 +245,11 @@ export const Resume = (props) => {
                     Django
                   </div>
                   <div
-                    class="w-full  rounded-full h-1.5 dark:bg-gray-700
+                    className="w-full  rounded-full h-1.5 dark:bg-gray-700
                   "
                   >
                     <div
-                      class="bg-gray-200 h-1.5 rounded-full"
+                      className="bg-gray-200 h-1.5 rounded-full"
                       style={{ width: "90%" }}
                     ></div>
                   </div>
@@ -262,9 +262,9 @@ export const Resume = (props) => {
                   >
                     Javascript
                   </div>
-                  <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                  <div className="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
                     <div
-                      class="bg-gray-200 h-1.5 rounded-full"
+                      className="bg-gray-200 h-1.5 rounded-full"
                       style={{ width: "80%" }}
                     ></div>
                   </div>
@@ -277,9 +277,9 @@ export const Resume = (props) => {
                   >
                     PostgreSql
                   </div>
-                  <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                  <div className="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
                     <div
-                      class="bg-gray-200 h-1.5 rounded-full"
+                      className="bg-gray-200 h-1.5 rounded-full"
                       style={{ width: "90%" }}
                     ></div>
                   </div>
@@ -292,9 +292,9 @@ export const Resume = (props) => {
                   >
                     React
                   </div>
-                  <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                  <div className="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
                     <div
-                      class="bg-gray-200 h-1.5 rounded-full"
+                      className="bg-gray-200 h-1.5 rounded-full"
                       style={{ width: "70%" }}
                     ></div>
                   </div>

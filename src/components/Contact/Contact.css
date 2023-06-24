@@ -1,0 +1,14 @@
+.swal2-container {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.swal2-title,
+.swal2-html-container,
+.swal2-content {
+  color: #fff;
+}
+
+.swal2-popup {
+  border-color: #333;
+}
