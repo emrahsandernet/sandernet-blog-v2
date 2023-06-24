@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { BsTerminal, BsDatabaseCheck, BsInfinity } from "react-icons/bs";
 import { useThemeContext } from "../../hooks/useThemeContext";
-import redis from "../../assets/redis.svg"
-import mongodb from "../../assets/mongodb.svg"
-import postgresql from "../../assets/postgresql.svg"
-import django from "../../assets/django-alt.svg"
-import react from "../../assets/react.svg"
-import nodejs from "../../assets/nodejs.svg"
-import javascript from "../../assets/javascript.svg"
+import redis from "../../assets/redis.svg";
+import mongodb from "../../assets/mongodb.svg";
+import postgresql from "../../assets/postgresql.svg";
+import django from "../../assets/django-alt.svg";
+import react from "../../assets/react.svg";
+import nodejs from "../../assets/nodejs.svg";
+import javascript from "../../assets/javascript.svg";
 import bootstrap from "../../assets/bootstrap5.svg";
 export const Skill = () => {
   const { state } = useThemeContext();
@@ -132,8 +132,9 @@ export const Skill = () => {
               <div
                 className={state.isDark ? "text-[#a5b3ce]" : "text-gray-600"}
               >
-                Describe your expertise here. You can change the icon above to
-                any of the
+                Web geliştirme, internet üzerinde kullanıcılarla etkileşimde
+                bulunabilen, içerik sunabilen ve işlevsellik sağlayabilen web
+                siteleri ve uygulamalarının oluşturulması sürecidir.
               </div>
             </div>
 
@@ -165,10 +166,17 @@ export const Skill = () => {
               <div
                 className={state.isDark ? "text-[#a5b3ce]" : "text-gray-600"}
               >
-                Describe your expertise here. You can change the icon above to
-                any of the
+                Veritabanı tasarımı, verilerin yapısını ve ilişkilerini
+                tanımlayarak, veritabanı sistemlerinin verileri etkili ve
+                tutarlı bir şekilde saklamasını sağlayan bir süreçtir. Bu
+                süreçte tablolar, sütunlar ve ilişkiler gibi veritabanı
+                bileşenleri planlanır ve düzenlenir, veri entegrasyonu sağlanır
+                ve veri bütünlüğüne odaklanılır. Amacı, veritabanının verileri
+                tutarlılık, güvenilirlik ve etkinlik açısından optimize
+                etmesidir.
               </div>
             </div>
+
             <div className="flex flex-col justify-center items-center">
               <div
                 className={
@@ -197,8 +205,10 @@ export const Skill = () => {
               <div
                 className={state.isDark ? "text-[#a5b3ce]" : "text-gray-600"}
               >
-                Describe your expertise here. You can change the icon above to
-                any of the
+                Sunucu yönetimi, bir ağ ortamında sunucuların etkin bir şekilde
+                çalışmasını sağlamak için yapılan işlemleri içeren bir süreçtir.
+                Bu süreç, sunucuların kurulumunu, yapılandırmasını, izlenmesini
+                ve bakımını içerir.
               </div>
             </div>
           </div>
@@ -212,4 +222,4 @@ export const Skill = () => {
       </div>
     </div>
   );
-}
+};

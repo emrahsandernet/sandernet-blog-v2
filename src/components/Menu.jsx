@@ -1,16 +1,16 @@
-import React from 'react'
-import {BiUserCircle} from "react-icons/bi";
+import React from "react";
+import { BiUserCircle } from "react-icons/bi";
 import {
   FaBriefcase,
   FaPenFancy,
   FaFileAlt,
   FaRegCommentDots,
 } from "react-icons/fa";
-import { Link } from 'react-router-dom';
-import { useThemeContext } from '../hooks/useThemeContext';
+import { Link } from "react-router-dom";
+import { useThemeContext } from "../hooks/useThemeContext";
 
 export const Menu = (props) => {
-  const {  state } = useThemeContext();
+  const { state } = useThemeContext();
   return (
     <div
       className={
@@ -48,14 +48,15 @@ export const Menu = (props) => {
         <h1 className="mx-auto p-1  text-xs ">PROJELER</h1>
       </Link>
       <Link
-        to="/"
+        to="#"
         className={
           props.route === "/blog"
-            ? "flex flex-col mx-auto p-2 text-[#fe655c] cursor-pointer"
+            ? "flex flex-col mx-auto p-2 text-[#fe655c] cursor-not-allowed"
             : state.isDark
-            ? "flex flex-col mx-auto p-2 text-[#a5b3ce] cursor-pointer hover:text-white"
-            : "flex flex-col mx-auto p-2 text-[#354765] cursor-pointer hover:text-black"
+            ? "flex flex-col mx-auto p-2 text-[#a5b3ce] cursor-not-allowed  disabled:opacity-50 disabled:pointer-events-none"
+            : "flex flex-col mx-auto p-2 text-[#354765] cursor-not-allowed  disabled:opacity-50 disabled:pointer-events-none"
         }
+        aria-disabled="true"
       >
         <FaPenFancy className=" w-6 h-6 mx-auto " />
         <h1 className="mx-auto p-1  text-xs ">BLOG</h1>
@@ -88,4 +89,4 @@ export const Menu = (props) => {
       </Link>
     </div>
   );
-}
+};

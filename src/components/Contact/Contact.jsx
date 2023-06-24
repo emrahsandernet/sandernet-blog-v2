@@ -24,21 +24,23 @@ export const Contacts = () => {
         <div className="flex flex-col mx-auto p-10">
           <div className="p-1 text-center mt-9">
             <p className={isDarkMode ? "text-[#a5b3ce]" : "text-black"}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium, harum. Sunt eum consectetur beatae ex officia neque
-              iure odit deserunt tempora recusandae. Officia, atque. Vel
-              molestias qui nostrum labore voluptatem. Laudantium, harum. Sunt
-              eum consectetur beatae ex officia neque iure odit deserunt tempora
-              recusandae. Officia, atque. Vel molestias qui nostrum labore
-              voluptatem.
+              Projelerinizde yardıma mı ihtiyacınız var? Bana ulaşın.
             </p>
           </div>
         </div>
         <div className="md:hidden flex-row justify-center gap-10 mb-11 flex">
-          <AiFillTwitterCircle className="text-white w-6 h-6 hover:text-blue-500 rounded-full cursor-pointer" />
-          <AiFillGithub className="text-white w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer" />
-          <RiLinkedinFill className="text-white w-[22px] h-6 hover:text-blue-500 rounded-full cursor-pointer" />
-          <BsStackOverflow className="text-white w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer" />
+          <a href="https://twitter.com/emrahsander">
+            <AiFillTwitterCircle className="text-white w-6 h-6 hover:text-blue-500 rounded-full cursor-pointer" />
+          </a>
+          <a href="https://github.com/emrahsandernet">
+            <AiFillGithub className="text-white w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer" />
+          </a>
+          <a href="https://www.linkedin.com/in/emrah-%C5%9Fander-984274105/">
+            <RiLinkedinFill className="text-white w-[22px] h-6 hover:text-blue-500 rounded-full cursor-pointer" />
+          </a>
+          <a href="https://stackoverflow.com/users/18009995/emrah-%c5%9eander">
+            <BsStackOverflow className="text-white w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer" />
+          </a>
         </div>
 
         <div>

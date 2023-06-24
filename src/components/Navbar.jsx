@@ -24,9 +24,7 @@ const Navbar = (props) => {
         >
           <AiOutlineMenu
             className={
-              state.isDark
-                ? "text-white" + " w-6 h-6"
-                : "text-[#354765" + " w-6 h-6"
+              state.isDark ? "text-white w-6 h-6" : "text-[#354765] w-6 h-6"
             }
           />
         </button>
@@ -35,8 +33,8 @@ const Navbar = (props) => {
             <input
               type="checkbox"
               className="sr-only peer"
-              checked={state.isDark ? "checked" : ""}
-              onClick={() => {
+              checked={state.isDark}
+              onChange={() => {
                 state.isDark
                   ? dispatch({ type: "LIGHT" })
                   : dispatch({ type: "DARK" });
@@ -67,13 +65,13 @@ const Navbar = (props) => {
           </label>
         </div>
       </div>
-      <div className=" justif-between gap-6 hidden sm:flex ">
+      <div className="flex items-center justify-between gap-6 hidden sm:flex">
         <a href="https://twitter.com/emrahsander">
           <AiFillTwitterCircle
             className={
               state.isDark
-                ? "text-white w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
-                : "text-[#354765] w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
+                ? "text-white w-6 h-6 hover:text-blue-500 rounded-full cursor-pointer"
+                : "text-[#354765] w-6 h-6 hover:text-blue-500 rounded-full cursor-pointer"
             }
           />
         </a>
@@ -81,8 +79,8 @@ const Navbar = (props) => {
           <AiFillGithub
             className={
               state.isDark
-                ? "text-white w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
-                : "text-[#354765] w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
+                ? "text-white w-6 h-6 hover:text-blue-500 rounded-full cursor-pointer"
+                : "text-[#354765] w-6 h-6 hover:text-blue-500 rounded-full cursor-pointer"
             }
           />
         </a>
@@ -90,8 +88,8 @@ const Navbar = (props) => {
           <RiLinkedinFill
             className={
               state.isDark
-                ? "text-white w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
-                : "text-[#354765] w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
+                ? "text-white w-6 h-6 hover:text-blue-500 rounded-full cursor-pointer"
+                : "text-[#354765] w-6 h-6 hover:text-blue-500 rounded-full cursor-pointer"
             }
           />
         </a>
@@ -99,8 +97,8 @@ const Navbar = (props) => {
           <BsStackOverflow
             className={
               state.isDark
-                ? "text-white w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
-                : "text-[#354765] w-6 h-6 hover:text-blue-500  rounded-full cursor-pointer"
+                ? "text-white w-6 h-6 hover:text-blue-500 rounded-full cursor-pointer"
+                : "text-[#354765] w-6 h-6 hover:text-blue-500 rounded-full cursor-pointer"
             }
           />
         </a>
@@ -108,7 +106,7 @@ const Navbar = (props) => {
       <div>
         <Link
           to={"/contact"}
-          className="rounded-full  py-2 px-4  text-white font-bold bg-[#fe655c] hover:bg-[#fe746c]"
+          className="rounded-full py-2 px-4 text-white font-bold bg-[#fe655c] hover:bg-[#fe746c]"
         >
           İletişim
         </Link>
@@ -116,4 +114,5 @@ const Navbar = (props) => {
     </nav>
   );
 };
+
 export default Navbar;
